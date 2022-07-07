@@ -1,8 +1,8 @@
-document.querySelector('#submitCaseInput').addEventListener('click', searchCountryCases)
+document.querySelector('#submitDeathInput').addEventListener('click', searchCountryDeaths)
 
-function searchCountryCases(){
+function searchCountryDeaths(){
 
-let userCountry = document.querySelector('#caseInput').value
+let userCountry = document.querySelector('#deathInput').value
 
 let slug = ''
 
@@ -13,7 +13,7 @@ fetch(`https://api.covid19api.com/countries`)
         let ind = data.findIndex( obj => {
             return(obj.Country === userCountry)
         })
-    document.querySelector('#countryName').innerText = `Showing cases for ${userCountry}`
+    document.querySelector('#countryNameD').innerText = `Showing deaths for ${userCountry}`
     slug = data[ind].Slug
     console.log(slug)
 
@@ -27,7 +27,7 @@ fetch(`https://api.covid19api.com/countries`)
             return(obj.Country === userCountry)})
 
         let countryData = data.Countries[index]
-        document.querySelector('#caseCount').innerText = `Total confirmed cases in ${userCountry}: ${countryData.TotalConfirmed}`
+        document.querySelector('#deathCount').innerText = `Total confirmed deaths in ${userCountry}: ${countryData.TotalDeaths}`
     })
 
 }
