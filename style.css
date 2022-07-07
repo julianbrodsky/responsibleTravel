@@ -1,0 +1,33 @@
+html{
+    font-size: 62.5%;
+    height: 100%;
+}
+body{
+    background: linear-gradient(#41B3A3,rgb(149, 203, 202));
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0
+}
+header{
+    padding-top: 2%;
+}
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+li ~ li{
+    padding: .5% 1%;
+    background: #E27D60;
+    color: white;
+    font-weight: 700;
+    font-size: 1.8rem;
+    border-radius: 8%;
+}
+li:first-of-type{
+    font-weight: 700;
+    color: white;
+    font-size: 4rem;
+}
