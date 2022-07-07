@@ -6,10 +6,11 @@ body{
     background: linear-gradient(#41B3A3,rgb(149, 203, 202));
     background-repeat: no-repeat;
     height: 100%;
-    margin: 0
+    margin: 0;
+    font-family: 'Exo 2', sans-serif;
 }
 header{
-    padding-top: 2%;
+    padding: 2% 0 8% 0;
 }
 ul{
     display: flex;
@@ -21,13 +22,33 @@ ul{
 li ~ li{
     padding: .5% 1%;
     background: #E27D60;
-    color: white;
     font-weight: 700;
     font-size: 1.8rem;
     border-radius: 8%;
 }
 li:first-of-type{
     font-weight: 700;
-    color: white;
     font-size: 4rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.half{
+    width: 50%;
+    height: 20%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#caseInput{
+    width: 50%;
+}
+
+h2{
+    font-size: 1.8rem;
 }

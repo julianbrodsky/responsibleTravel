@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsible Travel</title>
     <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,6 +18,16 @@
         <li><a href="deaths.html">Deaths</a></li>
         <li><a href="about.html">About</a></li>
     </ul></nav></header>
+
+    <section class="half">
+        <h2>Search Cases by Country</h2>
+        <input type="text" id="caseInput">
+        <button id="submitCaseInput">Search</button>
+    </section>
+    <section class="half">
+        <h3 id="countryName"></h3>
+        <span id="caseCount"></span>
+    </section>
     <script src="main.js"></script>
 </body>
 </html>
