@@ -35,20 +35,35 @@ a{
     text-decoration: none;
     color: white;
 }
-
-.half{
-    width: 50%;
-    height: 20%;
+.halfContainer{
     display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: space-around;
+    flex-flow: row;
 }
 
+.half{
+    display: flex;
+    flex: 1;
+    height: 10rem;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column wrap;
+}
 #caseInput{
     width: 50%;
 }
 
 h2{
     font-size: 1.8rem;
+}
+
+#countryName{
+    color: #C38D9E;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#caseCount{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
 }
