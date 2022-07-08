@@ -6,12 +6,20 @@ let userCountry = document.querySelector('#caseInput').value
 
 
 function capFirstLetter(country){
-return country.split(" ").map(function(word){
-      return word.charAt(0).toUpperCase() + word.slice(1);
-    }).join(" ");
+    return country.split(" ").map(function(word){
+          return word.charAt(0).toUpperCase() + lowerLastLetters(word.slice(0))
+          
+        }).join(" ")
+    }
+function lowerLastLetters(word){
+    let restOfWord = ''
+    for(let i = 1; i < word.length; i++){
+        restOfWord += word[i].toLowerCase()
+    }
+    return(restOfWord)
 }
 
-userCountry = capFirstLetter(userCountry)
+    userCountry = capFirstLetter(userCountry)
 
 let slug = ''
 
