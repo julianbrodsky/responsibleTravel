@@ -41,6 +41,8 @@ a{
     flex-flow: row;
     height: 55%;
     align-items: center;
+    max-width: 100%;
+    width: auto;
 }
 
 .half{
@@ -49,7 +51,8 @@ a{
     height: 10rem;
     justify-content: space-around;
     align-items: center;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
+    max-width: 100%;
 }
 #caseInput, #deathInput{
     width: 50%;
@@ -64,10 +67,32 @@ h2{
     color: #C38D9E;
     font-size: 5rem;
     font-weight: 700;
+    text-align: center;
+    padding-bottom: 5%;
 }
 
 #caseCount, #deathCount{
     color: white;
     font-size: 4rem;
     font-weight: 700;
+}
+
+.faq{
+    height: 100%;
+    text-align: center;
+    background: #C38D9E;
+}
+.faq h2{
+font-size: 4.5rem;
+color: white;
+font-weight: 700;
+}
+
+.faq p{
+    font-size: 2rem;
+    padding: 0 5%;
+}
+
+.indexhc{
+    height: 60%;
 }

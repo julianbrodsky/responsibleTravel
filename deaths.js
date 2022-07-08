@@ -13,7 +13,7 @@ fetch(`https://api.covid19api.com/countries`)
         let ind = data.findIndex( obj => {
             return(obj.Country === userCountry)
         })
-    document.querySelector('#countryNameD').innerText = `Showing deaths for ${userCountry}`
+    document.querySelector('#countryNameD').innerText = `Total confirmed deaths in ${userCountry}`
     slug = data[ind].Slug
     console.log(slug)
 
@@ -27,7 +27,7 @@ fetch(`https://api.covid19api.com/countries`)
             return(obj.Country === userCountry)})
 
         let countryData = data.Countries[index]
-        document.querySelector('#deathCount').innerText = `Total confirmed deaths in ${userCountry}: ${countryData.TotalDeaths}`
+        document.querySelector('#deathCount').innerText = countryData.TotalDeaths
     })
 
 }
