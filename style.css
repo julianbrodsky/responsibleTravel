@@ -101,3 +101,43 @@ font-weight: 700;
 .abt{
     padding: 5%;
 }
+
+
+@media all and (max-width: 330px){
+    .halfContainer{
+        height: 150%;
+    }
+
+}
+@media all and (max-width: 475px){
+    .halfContainer{
+       flex-wrap: wrap;
+    }
+    .faq h2{
+        font-size: 2rem;
+    }
+
+}
+@media all and (max-width: 595px){
+    header h1{
+        font-size: 2rem;
+    }
+}
+@media all and (max-width: 754px){
+    .halfContainer{
+        height: 100%;
+    }
+}
+
+@media all and (max-width: 583px){
+    .abt p{
+        padding: 3%;
+    }
+    .abt.half{
+        display: inline;
+        width: 100%;
+    }
+    .abt.halfContainer{
+        display: inline;
+    }
+}
