@@ -4,6 +4,14 @@ function searchCountryDeaths(){
 
 let userCountry = document.querySelector('#deathInput').value
 
+function capFirstLetter(country){
+    return country.split(" ").map(function(word){
+          return word.charAt(0).toUpperCase() + word.slice(1);
+        }).join(" ");
+    }
+    
+    userCountry = capFirstLetter(userCountry)
+    
 let slug = ''
 
 fetch(`https://api.covid19api.com/countries`)
